@@ -1,0 +1,13 @@
+{
+    "type": "code",
+    "modid": "breadnbutter",
+    "name": "Bread 'N Butter",
+    "authors": [
+        "Flare"
+    ],
+    "description": "Adds sliced bread and spreadable butter to Vintage Story.",
+    "version": "0.0.1",
+    "dependencies": {
+        "game": "1.19.0"
+    }
+}

@@ -1,5 +1,5 @@
 {
-  "dotnet.defaultSolution": "ModTemplate.sln",
+  "dotnet.defaultSolution": "breadnbutter.sln",
   "files.associations": {
     "server-*.txt": "log",
     "client-*.txt": "log"
