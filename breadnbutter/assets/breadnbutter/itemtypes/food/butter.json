@@ -19,8 +19,8 @@
 	"materialDensity": 200,
     "transitionableProps": [{
         "type": "Perish",
-        "freshHours": { "avg": 1460 },
-        "spoilHours": { "avg": 196 },
+        "freshHours": { "avg": 2160 },
+        "transitionHours": { "avg": 8 },
         "transitionedStack": {
             "type": "item",
             "code": "game:rot"
@@ -30,37 +30,37 @@
 	"guiTransform": {
 		"rotate": false,
 		"translation": {
-			"x": 6,
+			"x": 2,
 			"y": 6,
 			"z": 0
 		},
 		"rotation": {
-			"x": 171,
-			"y": -122,
-			"z": 33
+			"x": 139,
+			"y": -36,
+			"z": 0
 		},
 		"origin": {
-			"x": 0.4,
-			"y": 0.08,
+			"x": 0.5,
+			"y": 0.1,
 			"z": 0.5
 		},
-		"scale": 4
+		"scale": 3.5
 	},
 	"tpHandTransform": {
 		"translation": {
-			"x": 0,
-			"y": 0,
-			"z": 0
+			"x": -0.77,
+			"y": -0.15,
+			"z": -0.64
 		},
 		"rotation": {
-			"x": 5,
-			"y": 41,
-			"z": -31
+			"x": 0,
+			"y": -71,
+			"z": 18
 		},
 		"origin": {
-			"x": 0.23,
-			"y": 0,
-			"z": 0.13
+			"x": 0.5,
+			"y": 0.1,
+			"z": 0.5
 		},
 		"scale": 0.75
 	},
@@ -71,33 +71,33 @@
 			"z": 0
 		},
 		"rotation": {
-			"x": 180,
-			"y": 33,
-			"z": -180
+			"x": 0,
+			"y": 0,
+			"z": 0
 		},
 		"origin": {
 			"x": 0.5,
 			"y": 0,
 			"z": 0.5
 		},
-		"scale": 5
+		"scale": 4.8
 	},
 	"fpHandTransform": {
 		"translation": {
-			"x": -0.06,
-			"y": 0.36,
-			"z": 0.23
+			"x": 0.0,
+			"y": 0.1,
+			"z": 0.0
 		},
 		"rotation": {
-			"x": 40,
-			"y": 91,
-			"z": 15
+			"x": 65,
+			"y": 21,
+			"z": -6
 		},
 		"origin": {
 			"x": 0.5,
 			"y": 0.1,
 			"z": 0.5
 		},
-		"scale": 2.5
+		"scale": 2.15
 	}
 }

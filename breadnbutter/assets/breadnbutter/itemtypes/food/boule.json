@@ -1,0 +1,157 @@
+{
+  "code": "boule",
+  "class": "ItemBoule",
+  "maxstacksizeByType": {
+    "*-charred": 12,
+    "*": 8
+  },
+  "variantgroups": [
+    {
+      "code": "type",
+      "states": [
+        "spelt",
+        "rye",
+        "flax",
+        "rice",
+        "cassava",
+        "amaranth",
+        "sunflower"
+      ]
+    },
+    { "code": "state", "states": ["partbaked", "perfect", "charred"] }
+  ],
+  "shape": {
+    "base": "item/food/boule"
+  },
+  "attributesByType": {
+    "*-partbaked": {
+      "displaycaseable": false,
+      "shelvable": false,
+      "bakingProperties": {
+        "temp": 160,
+        "levelFrom": 0.25,
+        "levelTo": 0.5,
+        "startScaleY": 0.95,
+        "endScaleY": 1.1,
+        "resultCode": "breadnbutter:boule-{type}-perfect",
+        "initialCode": "breadnbutter:boule-dough-{type}",
+        "largeItem": true
+      }
+    },
+    "*-perfect": {
+      "displaycaseable": true,
+      "shelvable": true,
+      "bakingProperties": {
+        "temp": 160,
+        "levelFrom": 0.5,
+        "levelTo": 0.75,
+        "startScaleY": 1.1,
+        "endScaleY": 1.13,
+        "resultCode": "breadnbutter:boule-{type}-charred",
+        "initialCode": "breadnbutter:boule-{type}-partbaked",
+        "largeItem": true
+      }
+    },
+    "*-charred": {
+      "displaycaseable": true,
+      "shelvable": true,
+      "bakingProperties": {
+        "temp": 160,
+        "levelFrom": 0.75,
+        "levelTo": 1,
+        "startScaleY": 1.13,
+        "endScaleY": 1.1,
+        "initialCode": "breadnbutter:boule-{type}-perfect",
+        "largeItem": true
+      }
+    }
+  },
+  "nutritionPropsByType": {
+    "*-flax-partbaked": { "saturation": 280, "foodcategory": "Grain" },
+    "*-flax-perfect": { "saturation": 640, "foodcategory": "Grain" },
+    "*-flax-charred": { "saturation": 400, "foodcategory": "Grain" },
+
+    "*-rice-partbaked": { "saturation": 640, "foodcategory": "Grain" },
+    "*-rice-perfect": { "saturation": 1320, "foodcategory": "Grain" },
+    "*-rice-charred": { "saturation": 880, "foodcategory": "Grain" },
+
+    "*-partbaked": { "saturation": 600, "foodcategory": "Grain" },
+    "*-perfect": { "saturation": 1200, "foodcategory": "Grain" },
+    "*-charred": { "saturation": 840, "foodcategory": "Grain" }
+  },
+  "texturesbytype": {
+    "*-perfect": {
+      "bread": { "base": "item/food/boule/{type}bread" },
+      "breadbottom": { "base": "item/food/boule/{type}breadbottom" }
+    },
+    "*-charred": {
+      "bread": { "base": "item/food/boule/{type}bread1" },
+      "breadbottom": { "base": "item/food/boule/{type}breadbottom1" }
+    },
+    "*-partbaked": {
+      "bread": { "base": "item/food/boule/{type}bread2" },
+      "breadbottom": { "base": "item/food/boule/{type}breadbottom2" }
+    }
+  },
+  "creativeinventory": { "general": ["*-perfect"], "items": ["*-perfect"] },
+  "nutritionProps": {
+    "saturation": 800,
+    "health": 0,
+    "foodcategory": "Grain"
+  },
+  "combustiblePropsByType": {
+    "*-partbaked": {
+      "meltingPoint": 200,
+      "meltingDuration": 25,
+      "smeltedRatio": 1,
+      "smeltingType": "bake",
+      "smeltedStack": {
+        "type": "item",
+        "code": "breadnbutter:boule-{type}-charred"
+      },
+      "requiresContainer": false
+    },
+    "*-perfect": {
+      "meltingPoint": 200,
+      "meltingDuration": 25,
+      "smeltedRatio": 1,
+      "smeltingType": "bake",
+      "smeltedStack": {
+        "type": "item",
+        "code": "breadnbutter:boule-{type}-charred"
+      },
+      "requiresContainer": false
+    }
+  },
+  "materialDensity": 200,
+  "transitionableProps": [
+    {
+      "type": "Perish",
+      "freshHours": { "avg": 2160 },
+      "transitionHours": { "avg": 8 },
+      "transitionedStack": {
+        "type": "item",
+        "code": "game:rot"
+      },
+      "transitionRatio": 0.5
+    }
+  ],
+  "guiTransform": {
+    "translation": { "x": 0, "y": 0, "z": 0 },
+    "rotation": { "x": 163, "y": -37, "z": 10 },
+    "origin": { "x": 0.5, "y": 0.1, "z": 0.6 },
+    "scale": 2.3
+  },
+  "tpHandTransform": {
+    "translation": { "x": -0.7, "y": -0.4, "z": -0.64 },
+    "rotation": { "x": -16, "y": 23, "z": -90 },
+    "origin": { "x": 0.5, "y": 0.1, "z": 0.5 },
+    "scale": 0.75
+  },
+  "groundTransform": {
+    "translation": { "x": 0, "y": 0, "z": 0 },
+    "rotation": { "x": 0, "y": -90, "z": 0 },
+    "origin": { "x": 0.5, "y": 0, "z": 0.5 },
+    "scale": 3.5
+  }
+}

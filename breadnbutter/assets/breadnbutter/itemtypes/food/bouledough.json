@@ -1,0 +1,81 @@
+{
+  "code": "boule-dough",
+  "maxstacksize": 8,
+  "variantgroups": [
+    {
+      "code": "type",
+      "states": [
+        "spelt",
+        "rye",
+        "flax",
+        "rice",
+        "cassava",
+        "amaranth",
+        "sunflower"
+      ]
+    }
+  ],
+  "shape": {
+    "base": "item/food/boule"
+  },
+  "attributes": {
+    "bakingProperties": {
+      "temp": 160,
+      "levelFrom": 0.0,
+      "levelTo": 0.25,
+      "startScaleY": 0.9,
+      "endScaleY": 0.95,
+      "resultCode": "breadnbutter:boule-{type}-partbaked",
+      "largeItem": true
+    }
+  },
+  "textures": {
+    "bread": { "base": "item/food/boule/{type}dough" },
+    "breadbottom": { "base": "item/food/boule/{type}dough" }
+  },
+  "creativeinventory": { "general": ["*"], "items": ["*"] },
+  "nutritionProps": {
+    "saturation": 400,
+    "health": 0,
+    "foodcategory": "Grain"
+  },
+  "materialDensity": 200,
+  "combustibleProps": {
+    "meltingPoint": 200,
+    "meltingDuration": 40,
+    "smeltedRatio": 1,
+    "smeltingType": "bake",
+    "smeltedStack": { "type": "item", "code": "breadnbutter:boule-{type}-charred" },
+    "requiresContainer": false
+  },
+  "transitionableProps": [
+    {
+      "type": "Perish",
+      "freshHours": { "avg": 2160 },
+      "transitionHours": { "avg": 8 },
+      "transitionedStack": {
+        "type": "item",
+        "code": "game:rot"
+      },
+      "transitionRatio": 0.5
+    }
+  ],
+  "guiTransform": {
+    "translation": { "x": 0, "y": 0, "z": 0 },
+    "rotation": { "x": 163, "y": -37, "z": 10 },
+    "origin": { "x": 0.5, "y": 0.1, "z": 0.6 },
+    "scale": 2.3
+  },
+  "tpHandTransform": {
+    "translation": { "x": -0.7, "y": -0.4, "z": -0.64 },
+    "rotation": { "x": -16, "y": 23, "z": -90 },
+    "origin": { "x": 0.5, "y": 0.1, "z": 0.5 },
+    "scale": 0.75
+  },
+  "groundTransform": {
+    "translation": { "x": 0, "y": 0, "z": 0 },
+    "rotation": { "x": 0, "y": -90, "z": 0 },
+    "origin": { "x": 0.5, "y": 0, "z": 0.5 },
+    "scale": 3.5
+  }
+}

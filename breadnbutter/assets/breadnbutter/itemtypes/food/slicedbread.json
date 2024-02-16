@@ -1,0 +1,94 @@
+{
+  "code": "slicedbread",
+  "class": "slicedbread",
+  "maxstacksizeByType": {
+    "*-charred": 96,
+    "*": 64
+  },
+  "variantgroups": [
+    {
+      "code": "type",
+      "states": [
+        "spelt",
+        "rye",
+        "flax",
+        "rice",
+        "cassava",
+        "amaranth",
+        "sunflower"
+      ]
+    },
+    { "code": "state", "states": ["partbaked", "perfect", "charred"] },
+    { "code": "spread", "states": ["none", "blueberry", "pineapple", "blackcurrant", "redcurrant", "whitecurrant", "cranberry", "cactifruit", "butter", "pinkapple", "redapple", "yellowapple", "mango", "lychee", "orange", "pear", "cherry", "breadfruit", "pomegranate", "peach", "mixed"]}
+  ],
+  "shape": {
+    "base": "item/food/slicedbread"
+  },
+  "attributes": {
+    "displaycaseable": true,
+    "shelvable": true,
+    "jamSatiety": 0.00
+  },
+  "nutritionPropsByType": {
+    "*-flax-partbaked-*": { "saturation": 35, "foodcategory": "Grain" },
+    "*-flax-perfect-*": { "saturation": 80, "foodcategory": "Grain" },
+    "*-flax-charred-*": { "saturation": 50, "foodcategory": "Grain" },
+
+    "*-rice-partbaked-*": { "saturation": 80, "foodcategory": "Grain" },
+    "*-rice-perfect-*": { "saturation": 165, "foodcategory": "Grain" },
+    "*-rice-charred-*": { "saturation": 110, "foodcategory": "Grain" },
+
+    "*-partbaked-*": { "saturation": 75, "foodcategory": "Grain" },
+    "*-perfect-*": { "saturation": 150, "foodcategory": "Grain" },
+    "*-charred-*": { "saturation": 105, "foodcategory": "Grain" }
+  },
+  "texturesbytype": {
+    "*-perfect-*": {
+      "bread": { "base": "item/food/boule/{type}bread" },
+      "jam": { "base": "item/food/spread/{spread}" }
+    },
+    "*-charred-*": {
+      "bread": { "base": "item/food/boule/{type}bread1" },
+      "jam": { "base": "item/food/spread/{spread}" }
+    },
+    "*-partbaked-*": {
+      "bread": { "base": "item/food/boule/{type}bread2" },
+      "jam": { "base": "item/food/spread/{spread}" }
+    },
+    "*apple": {
+      "jam": { "base": "item/food/spread/apple" }
+    }
+  },
+  "creativeinventory": { "general": ["*-perfect-none"], "items": ["*-perfect-none"] },
+  "materialDensity": 200,
+  "transitionableProps": [
+    {
+      "type": "Perish",
+      "freshHours": { "avg": 2160 },
+      "transitionHours": { "avg": 8 },
+      "transitionedStack": {
+        "type": "item",
+        "code": "game:rot"
+      },
+      "transitionRatio": 0.5
+    }
+  ],
+  "guiTransform": {
+    "translation": { "x": 0, "y": 0, "z": 0 },
+    "rotation": { "x": 163, "y": -37, "z": 10 },
+    "origin": { "x": 0.5, "y": 0.1, "z": 0.6 },
+    "scale": 2.3
+  },
+  "tpHandTransform": {
+    "translation": { "x": -0.7, "y": -0.4, "z": -0.64 },
+    "rotation": { "x": -16, "y": 23, "z": -90 },
+    "origin": { "x": 0.5, "y": 0.1, "z": 0.5 },
+    "scale": 0.75
+  },
+  "groundTransform": {
+    "translation": { "x": 0, "y": 0, "z": 0 },
+    "rotation": { "x": 0, "y": -90, "z": 0 },
+    "origin": { "x": 0.5, "y": 0, "z": 0.5 },
+    "scale": 3.5
+  }
+}

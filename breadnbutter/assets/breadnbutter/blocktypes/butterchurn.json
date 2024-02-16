@@ -1,0 +1,43 @@
+{
+  "code": "butterchurn",
+  "class": "butterchurnblock",
+  "entityClass": "butterchurnbe",
+  "entityBehaviors": [{ "name": "Animatable" }, { "name": "UnstableFalling" }],
+  "shape": {
+    "base": "block/food/butterchurn"
+  },
+  "attributes": {
+    "partialAttachable": true,
+    "capacityLitres": 50
+  },
+  "sidesolid": { "all": false },
+  "sideopaque": { "all": false },
+  "textures": {
+    "aged": { "base": "block/food/butterchurn/aged" },
+    "band": { "base": "block/food/butterchurn/band" },
+    "bottom": { "base": "block/food/butterchurn/bottom" }
+  },
+  "blockmaterial": "Wood",
+  "creativeinventory": { "general": ["*"], "items": ["*"] },
+  "sounds": {
+    "place": "block/planks",
+    "hit": "block/planks",
+    "break": "block/planks",
+    "walk": "walk/wood"
+  },
+  "materialDensity": 300,
+  "collisionSelectionBox": {
+    "x1": 0,
+    "y1": 0,
+    "z1": 0,
+    "x2": 1,
+    "y2": 1,
+    "z2": 1
+  },
+  "sideao": {
+    "all": false
+  },
+  "emitsideao": {
+    "all": false
+  }
+}

@@ -1,0 +1,74 @@
+{
+	"editor": {
+		"allAngles": false,
+		"entityTextureMode": false
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+	},
+	"textures": {
+		"bread": "item/food/boule/amaranthbread",
+		"jam": "item/food/spread/none"
+	},
+	"elements": [
+		{
+			"name": "Boule",
+			"from": [ 2.5, 0.0, 6.5 ],
+			"to": [ 13.5, 1.0, 8.5 ],
+			"rotationOrigin": [ 8.0, 0.0, 8.0 ],
+			"rotationY": -180.0,
+			"faces": {
+				"north": { "texture": "#bread", "uv": [ 0.5, 10.5, 11.5, 11.5 ] },
+				"east": { "texture": "#bread", "uv": [ 1.5, 10.5, 3.5, 11.5 ] },
+				"south": { "texture": "#bread", "uv": [ 3.0, 12.5, 14.0, 13.5 ] },
+				"west": { "texture": "#bread", "uv": [ 1.5, 1.5, 3.5, 2.5 ] },
+				"up": { "texture": "#bread", "uv": [ 5.0, 14.0, 16.0, 16.0 ], "rotation": 180 },
+				"down": { "texture": "#bread", "uv": [ 5.0, 14.0, 16.0, 16.0 ], "rotation": 180 }
+			},
+			"children": [
+				{
+					"name": "top",
+					"from": [ 0.5, 0.0, 2.0 ],
+					"to": [ 10.5, 1.0, 2.5 ],
+					"rotationOrigin": [ 5.5, -1.0, 7.5 ],
+					"faces": {
+						"east": { "texture": "#bread", "uv": [ 0.0, 0.0, 0.5, 1.0 ] },
+						"south": { "texture": "#bread", "uv": [ 0.0, 5.0, 10.0, 6.0 ] },
+						"west": { "texture": "#bread", "uv": [ 0.0, 0.0, 0.5, 1.0 ] },
+						"up": { "texture": "#bread", "uv": [ 5.5, 13.5, 15.5, 14.0 ] },
+						"down": { "texture": "#bread", "uv": [ 5.5, 13.5, 15.5, 14.0 ] }
+					},
+					"children": [
+						{
+							"name": "verytop",
+							"from": [ 1.0, 0.0, 0.5 ],
+							"to": [ 9.0, 1.0, 1.0 ],
+							"rotationOrigin": [ 0.0, 1.0, 1.0 ],
+							"faces": {
+								"east": { "texture": "#bread", "uv": [ 8.0, 0.0, 8.5, 1.0 ] },
+								"south": { "texture": "#bread", "uv": [ 1.0, 4.5, 9.0, 5.5 ] },
+								"west": { "texture": "#bread", "uv": [ 8.0, 0.0, 8.5, 1.0 ] },
+								"up": { "texture": "#bread", "uv": [ 6.5, 13.0, 14.5, 13.5 ] },
+								"down": { "texture": "#bread", "uv": [ 6.5, 13.0, 14.5, 13.5 ] }
+							},
+							"children": [
+								{
+									"name": "spread",
+									"from": [ 10.5, 1.01, 1.5 ],
+									"to": [ 21.5, 1.01, 4.5 ],
+									"rotationOrigin": [ 10.0, 1.0, 1.0 ],
+									"rotationX": -180.0,
+									"rotationY": 0.0,
+									"rotationZ": -180.0,
+									"faces": {
+										"up": { "texture": "#jam", "uv": [ 0.0, 0.0, 11.0, 12.0 ], "autoUv": false }
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]}

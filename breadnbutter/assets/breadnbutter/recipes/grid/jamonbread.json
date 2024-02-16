@@ -1,0 +1,29 @@
+[
+  {
+    "ingredientPattern": "K,J,B",
+    "ingredients": {
+      "K": {
+        "type": "item",
+        "code": "game:knife-*",
+        "isTool": true
+      },
+      "J": {
+        "type": "block",
+        "code": "game:bowl-meal",
+        "returnedStack": {"type": "block", "code": "game:bowl-fired"}
+      },
+      "B": {
+        "type": "item",
+        "code": "breadnbutter:slicedbread-*-none",
+        "name": "breadslice"
+      }
+    },
+    "width": 1,
+    "height": 3,
+    "output": {
+      "type": "item",
+      "code": "breadnbutter:slicedbread-{breadslice}-none",
+      "quantity": 1
+    }
+  }
+]

@@ -1,0 +1,67 @@
+{
+  "code": "boule",
+  "behaviors": [{ "name": "UnstableFalling" }],
+  "class": "BlockBoule",
+  "entityClass": "Boule",
+  "drawtype": "json",
+  "shape": {
+    "base": "item/food/boule"
+  },
+  "variantgroups": [
+    {
+      "code": "type",
+      "states": [
+        "spelt",
+        "rye",
+        "flax",
+        "rice",
+        "cassava",
+        "amaranth",
+        "sunflower"
+      ]
+    },
+    { "code": "state", "states": ["partbaked", "perfect", "charred"] }
+  ],
+  "sidesolid": {
+    "all": "false"
+  },
+  "sideopaque": {
+    "all": "false"
+  },
+  "texturesbytype": {
+    "*-perfect": {
+      "bread": { "base": "item/food/boule/{type}bread" },
+      "breadbottom": { "base": "item/food/boule/{type}breadbottom" }
+    },
+    "*-charred": {
+      "bread": { "base": "item/food/boule/{type}bread1" },
+      "breadbottom": { "base": "item/food/boule/{type}breadbottom1" }
+    },
+    "*-partbaked": {
+      "bread": { "base": "item/food/boule/{type}bread2" },
+      "breadbottom": { "base": "item/food/boule/{type}breadbottom2" }
+    }
+  },
+  "resistance": 0.5,
+  "sounds": {
+    "place": "game:block/dirt",
+    "walk": "game:walk/gravel"
+  },
+  "blockmaterial": "Other",
+  "collisionbox": {
+    "x1": 0.15,
+    "y1": 0,
+    "z1": 0.15,
+    "x2": 0.85,
+    "y2": 0.175,
+    "z2": 0.85
+  },
+  "selectionbox": {
+    "x1": 0.15,
+    "y1": 0,
+    "z1": 0.15,
+    "x2": 0.85,
+    "y2": 0.175,
+    "z2": 0.85
+  }
+}
